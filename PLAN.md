@@ -16,7 +16,7 @@ Tick boxes only with evidence actually run.
 - [ ] `muse-hud watch` in a side terminal pane follows the newest session live: a tool starting or finishing in Muse is visible within about a second.
 - [x] A Muse version whose log format drifts degrades to fewer segments plus a clear `doctor` explanation — never a panic, a blank screen, or wrong numbers presented as fact.
 - [x] The HUD is read-only and offline: no network, no writes outside its own cache/config, no reading of credential files, and only fixed `git` probes.
-- [ ] `go test ./...`, `go vet ./...`, and a golden-fixture replay pass from a clean clone using only documented commands.
+- [x] `go test ./...`, `go vet ./...`, and a golden-fixture replay pass from a clean clone using only documented commands. (Verified 2026-11-04 from a clean `git clone`: `make build`, `make lint`, `go test ./...`, stub `print` all pass.)
 
 ## Context (verified 2026-11-04)
 
