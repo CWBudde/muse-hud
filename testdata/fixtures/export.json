@@ -1,0 +1,11 @@
+{
+  "export_schema_version": 1,
+  "redaction": "redacted",
+  "session_terminated_abnormally": false,
+  "sessions": [
+    {"session_id": "synthetic-session-0001", "root_session_id": "synthetic-session-0001", "turn_count": 2, "step_count": 5}
+  ],
+  "events": [
+    {"kind": "synthetic", "recorded_at": 1762000000000000}
+  ]
+}

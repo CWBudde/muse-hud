@@ -1,0 +1,6 @@
+{"record_type":"event","sequence":1,"recorded_at":1762000000000000,"payload_type":"session.started","payload":{"background_tasks":"none","command_id":"synthetic-command-9001","kind":"session_started"}}
+{"record_type":"event","sequence":2,"recorded_at":1762000001000000,"payload_type":"runtime.session.metadata","payload":{"kind":"metadata","record":{"build":{"semver":"9.9.9"},"model_id":"synthetic-model-9","provider_id":"synthetic-provider","workspace_root":"/example/example-workspace"}}}
+{"record_type":"event","sequence":3,"recorded_at":1762000002000000,"payload_type":"session.workspace_branch.observed","payload":{"kind":"workspace_branch","record":{"dirty":false,"reference":{"kind":"branch","name":"drift-branch"},"vcs":"git","workspace_root":"/example/example-workspace"}}}
+{"record_type":"event","sequence":4,"recorded_at":1762000003000000,"payload_type":"tool_batch.effect.begun","payload":{"kind":"tool_batch_effect","record":{"call_id":"synthetic-call-9001","effect_id":"synthetic-effect-9001","kind":"begun","tool_name":"bash"}}}
+{"record_type":"event","sequence":5,"recorded_at":1762000004000000,"payload_type":"future.hologram.observed","payload":{"kind":"hologram","record":{"note":"synthetic unknown family"}}}
+{"record_type":"event","sequence":6,"recorded_at":1762000005000000,"payload_type":"runtime.future.thing","payload":{"kind":"future","record":{}}}

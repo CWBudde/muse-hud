@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "load_status": "partial",
+  "summary": {
+    "run_records": 0,
+    "task_records": 4,
+    "payload_counts": [
+      {"payload_type": "run.model.configured", "count": 1},
+      {"payload_type": "runtime.session", "count": 4},
+      {"payload_type": "tool_batch.effect.started", "count": 2},
+      {"payload_type": "tool_batch.effect.terminal", "count": 1}
+    ],
+    "usage": null,
+    "projection_error": "tool-call batch with 1 call(s) was not committed",
+    "assistant_text_summary": null,
+    "task_summaries": [
+      {"task_id": "synthetic-task-0001", "task_kind": "tool.bash", "category": "tool", "state": "completed", "terminal": "completed"},
+      {"task_id": "synthetic-task-0002", "task_kind": "tool.read_file", "category": "tool", "state": "active", "terminal": null},
+      {"task_id": "synthetic-task-0003", "task_kind": "model.meta.response", "category": "unknown", "state": "completed", "terminal": "completed"}
+    ]
+  },
+  "timeline": [],
+  "annotations": []
+}

@@ -1,0 +1,20 @@
+# Build output
+/build/
+/bin/
+/muse-hud
+*.exe
+*.test
+*.out
+
+# Go
+/vendor/
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Local scratch; real Muse logs must never be copied into the repo
+/scratch/
+*.local.jsonl

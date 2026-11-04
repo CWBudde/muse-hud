@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "name": "muse-hud-probe",
+  "displayName": "muse-hud probe (Phase 4 spike — do not install)",
+  "version": "0.0.0",
+  "description": "Spike scaffold: probes whether plugin hooks could beat session-log tailing for muse-hud. Verdict in docs/spikes/f-plugin-hooks.md: no written win, do not install.",
+  "compat": {
+    "source": "native",
+    "manifestDir": ".muse-plugin"
+  },
+  "capabilities": {
+    "skills": [],
+    "commands": [],
+    "hooks": [
+      {
+        "id": "pre-tool",
+        "event": "PreToolUse",
+        "command": ["sh", "hooks/pre-tool.sh"],
+        "timeoutMs": 500,
+        "statusMessage": "muse-hud spike probe"
+      },
+      {
+        "id": "post-tool",
+        "event": "PostToolUse",
+        "command": ["sh", "hooks/post-tool.sh"],
+        "timeoutMs": 500,
+        "statusMessage": "muse-hud spike probe"
+      }
+    ],
+    "mcpServers": [],
+    "reminders": []
+  }
+}
