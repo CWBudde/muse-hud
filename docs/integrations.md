@@ -124,10 +124,16 @@ and per-segment why each is shown or hidden.
 
 ## What there is not (Phase 4 findings)
 
-- **No in-TUI statusline.** Muse 1.4.14 exposes no
-  statusLine/status-command hook in its CLI help or settings keys —
-  re-checked in `docs/spikes/h-in-tui-status-hook.md`. The recipes
-  above are the integration surface.
+- **No custom in-TUI statusline.** Muse 1.4.14 exposes no
+  statusLine/status-command hook for custom content in its CLI help
+  or settings keys — re-checked in
+  `docs/spikes/h-in-tui-status-hook.md`. Its built-in HUD does have
+  per-segment toggles (`tui.hud.model`, `.effort`, `.permissions`,
+  `.context`, `.branch`, `.tokens`, `.cost`, `.quota` in Muse's
+  `settings.json`; spike h, 2026-11-07 correction) — worth enabling
+  for live context/quota, which muse-hud cannot source externally —
+  but it renders only Muse's own segments. The recipes above remain
+  muse-hud's integration surface.
 - **No Muse plugin.** A minimal hook bundle validates, but hooks add
   no rendering surface and no freshness win worth running code inside
   Muse; the spike scaffold is kept uninstalled under

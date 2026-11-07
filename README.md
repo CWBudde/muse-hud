@@ -6,11 +6,18 @@ and effort, workspace and git branch, context/usage where Muse exposes it,
 running tools, subagents/workflows, and todo progress — kept visible without
 modifying the Muse binary.
 
-> **Honest note:** Muse exposes no statusLine/status-command hook, so this
-> is **not** an in-TUI Muse statusline. `muse-hud` is a companion binary:
-> run `muse-hud print` from a status bar, shell prompt, or script, or
-> `muse-hud watch` in a side terminal pane. It reads Muse's local
-> session data read-only and offline.
+> **Honest note:** Muse exposes no statusLine/status-command hook for
+> custom content, so this is **not** an in-TUI Muse statusline. Muse does
+> have a built-in HUD with per-segment toggles (`tui.hud.model`,
+> `.effort`, `.permissions`, `.context`, `.branch`, `.tokens`, `.cost`,
+> `.quota` in Muse's `settings.json`); it renders only Muse's own
+> segments — including live context and quota, which muse-hud cannot
+> source externally — and accepts no custom lines
+> (`docs/spikes/h-in-tui-status-hook.md`, 2026-11-07 correction).
+> `muse-hud` is the companion binary for the rest (running tools,
+> agents, session age): run `muse-hud print` from a status bar, shell
+> prompt, or script, or `muse-hud watch` in a side terminal pane. It
+> reads Muse's local session data read-only and offline.
 
 Status: **0.1.0** (see `CHANGELOG.md`). Verified Muse version:
 **1.4.14** (`docs/compatibility.md`).
