@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Guidance for AI coding agents in this repository. `CLAUDE.md` imports it.
+Guidance for AI coding agents in this repository.
 
 ## What this is
 
